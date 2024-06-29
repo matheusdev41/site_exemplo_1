@@ -209,7 +209,7 @@ main .container {
     .resultado .resultado-numbers{
         flex-direction: column;
     }
-    .main .container . main-text h1 {
+    .main .container .main-text h1 {
         font-size: 3rem;
     }
 }
