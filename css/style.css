@@ -37,6 +37,12 @@ body{
     cursor: pointer;
     background-image: var(--degrade-botao);
 }
+section, footer{
+    padding: 2.7rem 0;
+
+}
+
+
 
 /*classes do site*/
 
@@ -107,6 +113,43 @@ main .container {
     z-index: 10;
 }
 
+/* resultado */
+
+.resultado{
+    background: #FA8607;
+}
+.resultado .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultado .resultado-text{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.resultado .resultado-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.resultado .resultado-numbers p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.resultado .resultado-numbers p span{
+    font-size: 30px;
+    font-weight: 600;
+}
+/* end resultado */
+
 /* botão de menu responsivo */
 
 @media (max-width: 960px) {
@@ -149,5 +192,24 @@ main .container {
         font-size: 4rem;
     }
     
-}
+    .resultado .container{
+        flex-direction: column;
+    }
+    .resultado-numbers{
+        margin-top: 30px;
+    }
+    .resultado .resultado-text,
+    .resultado .resultado-numbers{
+        width: 100%;
+        text-align: center;
+    }
 
+}
+@media (max-width: 440px){
+    .resultado .resultado-numbers{
+        flex-direction: column;
+    }
+    .main .container . main-text h1 {
+        font-size: 3rem;
+    }
+}
