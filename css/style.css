@@ -150,6 +150,37 @@ main .container {
 }
 /* end resultado */
 
+/* section diferenciais */
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin:30px auto;
+}
+
+.diferenciais .card img{
+    width: 60px;
+}
+
+.diferenciais .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+/*efeito de sombra ao passar o mouse por cima da div*/
+.diferenciais .card:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+/* end diferenciais */
+
+
+
 /* botão de menu responsivo */
 
 @media (max-width: 960px) {
@@ -202,6 +233,14 @@ main .container {
     .resultado .resultado-numbers{
         width: 100%;
         text-align: center;
+    }
+
+    .diferenciais .container{
+        flex-direction: column;
+    }
+
+    .diferenciais .card{
+        width: 100%;
     }
 
 }
