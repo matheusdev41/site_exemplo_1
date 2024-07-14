@@ -214,6 +214,51 @@ main .container {
     font-size: 20px;
 }
 
+.melhores-lugares .azul{
+    font-size: 24px;
+    font-weight: 600;
+    color: #0060f0;
+}
+
+.melhores-lugares h2{
+    font-size: 2.5rem;
+}
+
+.melhores-lugares .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.melhores-lugares .cards .card-item{
+    width: 30%;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0px 35px 97px -15px rgb(216, 216, 216);
+}
+
+.melhores-lugares .cards img{
+    width: 80px;
+}
+.melhores-lugares .cards .local-casa{
+    margin: 5px 0;
+    color: var(--color-p) ;
+}
+.melhores-lugares .cards .nome-casa{
+    font-size: 30px;
+    font-weight: 500;
+}
+.melhores-lugares .cards .contato{
+    margin-bottom: 20px;
+    color: var(--color-p2);
+}
+.melhores-lugares .cards button{
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--laranja);
+    border: none;
+}
 /* responsividade */
 
 @media (max-width: 960px) {
@@ -282,8 +327,15 @@ main .container {
     .casa .casa-img {
         width: 100%;
         text-align: center;
+        padding: 0 ;
     }
-    
+    .melhores-lugares .cards{
+        flex-direction: column;
+    }
+    .melhores-lugares .cards .card-item{
+        width: 100%;
+        margin-top: 50px;
+    }
 
 }
 @media (max-width: 440px){
